@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!  name: Katherine Morris  >
+    <!  program purpose: The base of this program was created in CatGPT  >
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 50%;
+            background-color: rgba(90, 195, 231, .75);
+            border: 5px solid rgb(4, 4, 105); 
+            font-family: monospace;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th, td {
+            border: 2px solid rgb(9, 9, 131);
+            padding: 10px;
+            color: rgb(39, 2, 35);
+            text-align: left;
+            font-size: 20px;
+            width: 45%;
+        }
+    </style>
+    
+    <title>ch4</title>
+</head>
+<body style="background-image: url(computerimg.png); ">
+        
+<h1 style="text-align: center; color: gold; font-family: monospace; font-size: 40px;">Chapter 4: Networking</h1>
+<h1 style="font-size: 30px; font-family: monospace; margin: auto; display: block; text-align: center; color: gold;">Katherine Morris</h1>
+    <table>
+        <tr>
+            <th style="width: 40%; font-size: 25px; color: rgb(255, 14, 14); text-align: center;">Item</th>
+            <th style="width: 40%; font-size: 25px; color: rgb(255, 14, 14); text-align: center;">Definition</th>
+    </table>
+</body>
+    <table>       
+        <tr>
+            <td style="font-size: 25px; font-weight: bold; color: darkblue; width: 45%; background-color: rgb(244, 247, 242);">Network Classifications</td>
+                <table>
+                    <tr>
+                        <td style="font-weight: bold; width: 45%;">LAN-Local Area Network</td>
+                        <td>A set of computers located in a single building or complex</td>
+                    </tr>
+                <table>
+                    <tr>
+                        <td style="font-weight: bold; width: 45%;">MAN-Metropolitan Area Network</td>
+                        <td>Spans a community. Intermediate size.</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; width: 45%;">WAN-Wide Area Network</td>
+                        <td>Links over great distances like neighboring cities or across the world.</td>
+                   </tr>
+                </table>
+    <table>
+        <tr>
+            <td style="font-size: 25px; font-weight: bold; color: darkblue; background-color: rgb(244, 247, 242);">Network Models</td>
+                <table>
+                    <tr>
+                        <td style="font-weight: bold; width: 45%;">Bus Network</td> 
+                        <td>Machines connected to a common communication line, aka a bus.</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; width: 45%;">Star Network</td>
+                        <td>Machine serves as a focal point to which all other machines are connected.</td>
+                    </tr>
+                               
+             </table>
+              <table>
+                   <tr>
+                     <td style="font-weight: bold; font-size: 25px; color: darkblue; background-color: rgb(244, 247, 242);">Protocols</td>     
+             <table>  
+                   <tr>              
+                    <td style="font-weight: bold; width: 45%;">CSMA/CD (Ethernet)</td>
+                    <td>Multiple access with collision detection. Each message must be broadcast to all machines on the bus.<br />Not compatable with a star network.</td>
+                </tr>
+               <tr>
+                  <td style="font-weight: bold; width: 45%;">CSMA/CA (WiFi)</td>
+                             <td>Multiple access with collision avoidance; avoid rather than detect collisions.</td>
+                         </tr>        
+                     </table>
+                     <table>
+                      <tr>
+                         <td style="font-weight: bold; font-size: 25px; color: darkblue; background-color: rgb(244, 247, 242);">Combining Networks</td>
+                      <table>
+                    <tr>
+                        <td style="font-weight: bold; width: 45%;">Repeater</td>
+                        <td>Passes signals back and forth between two original buses.</td>
+                    </tr>
+                     <tr>
+                        <td style="font-weight: bold; width: 45%;">Bridge</td>
+                        <td>Connects two busses but does not necissarily pasll all messages across the connection.</td>
+                    </tr>
+                     <tr>
+                         <td style="font-weight: bold; width: 45%;">Switch</td>
+                         <td>A bridge with multiple connection that can connect to more than two busses.</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: bold; width: 45%;">Router</td>
+                         <td>Connection between networks to form Internet. Special purpose computers used for forwarding messages.</td>
+                   </tr>
+                   <tr>
+                         <td style="font-weight: bold; width: 45%;">Gateway</td>
+                         <td>Point in which a computer is linked to the Internet. Serves as a passageway between a netork and the outside world.</td>    
+                   </tr>
+                <table>
+                    <tr>
+                      <td style="font-weight: bold; color: darkblue; font-size: 25px; background-color: rgb(244, 247, 242);">Client/Server Model</td>
+                <table>
+                     <tr>
+                         <td style="font-weight: bold; width: 45%;">P2P-Peer to Peer</td> 
+                         <td>Involves proccesses that provide service to and recieve service form each other. Execute on temporary basis.</td>
+                     </tr>
+                      <tr>
+                         <td style="font-weight: bold; width: 45%;">Distributed System</td>
+                          <td>Software units that process on different computers.</td>
+                    </tr>
+                     <tr>
+                          <td style="font-weight: bold; width: 45%;">Cloud Computing</td>
+                          <td>Distributed system. Huge pool of shared computers on the network. Can be allocated for use by clients as needed.</td>
+                      </tr>
+                </table>
+                  <table>
+                    <tr>           
+                      <td style="font-size: 25px; font-weight: bold; color: darkblue; background-color: rgb(241, 240, 234);">Internet Addressing</td>
+              <table>
+                     <tr>
+                       <td style="font-weight: bold; width: 45%; height: 30%;">Tier 1</td>
+                            <ul><td>
+                                <li>Backbone of the Internet.</li>
+                                <li>Consists of high speed capacity</li>
+                                <li>International WAN's.</li>
+                                <li>Operated by large companies in the communications business.</li>
+                           </ul></td>                                              
+                   </tr>
+                     <tr>
+                        <td style="font-weight: bold; width: 45%;">Tier 2</td>
+                                        <ul><td>
+                                              <li>Connects to Tier 1 ISP's.</li>
+                                              <li>More reginal, less powerful.</li>
+                                              <li>Operated by companies in the communications business.</li>
+                                         </td></ul>
+                        </tr>
+                        <tr>                                     
+                          <td style="font-weight: bold; width: 45%; height: 30%;">Tier 3</td>
+                                        <ul><td style="text-align: left;">
+                                            <li>Independent Internet</li>
+                                            <li>Intranet</li>
+                                            <li>Operated by a single authority.</li>
+                                            <li>Supplies Internet access to individual homes and business</li>
+                                        </ul></td>
+                          </tr> 
+                      </table>
+                      <table>
+                        <tr>
+                            <td style="font-weight: bold; color: darkblue; font-size: 25px; background-color: bisque;">IP Address</td>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">ICANN</td>
+                                <td><ul>
+                                    <li>Internet corporation for assigned names and numbers.</li>
+                                    <li>Non-Profit established to coordinate Internets operation.</li>
+                                    <li><a href="https://www.ican.org/">https://www.ican.org/</a></li>
+                                </td></ul>
+                            </tr>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">DNS-Domain Name System</td>
+                                <td>Internet directory of name servers</td>
+                            </tr>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">TLD</td>
+                                <td><ul>
+                                    <li>Top Level Domain</li>
+                                    <li>End of a domain name that follows behind a dot such as .edu, .com</li>
+                                    <li><a href="https://worldstandards.eu/other/tlds/">https://worldstandards.eu/other/tlds/</li></a>
+                                </td></ul>
+                            </tr>
+                        </table>
+                        <table>                                               
+                           <tr>
+                               <td style="font-weight: bold; width: 45%;">Country Code TLD's</td>
+                              <td>Two letter Top Level Domain for a country.</td>
+                         </tr>
+                        </table>
+                         <table>
+                            <tr>
+                                <td style="font-weight: bold; font-size: 25px; color: darkblue; background-color: rgb(244, 247, 242);">Internet Protocol</td>
+                            </tr>
+                         </table>
+                        <table>
+                            <tr>                                
+                                <td style="width: 45%; font-weight: bold;">FTP</td>
+                             <td><ul>
+                                <li>File Transfer Protocol</li>
+                                <li>Application for accessing aother computer from a great distance.</li>
+                            </td></ul>
+                           </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">HTTP</td>
+                                <ul><td>
+                                    <li>Hypertext Transfer Protocol.</li>
+                                    <li>Handles web pages.</li>
+                                </ul></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">SMTP- Simple Mail Transfer Protocol</td> 
+                                <td>How two computers on an network interact while transmitting emails from one host to the next.</li>
+                                </td>                                                          
+                            </tr>
+                         </table>
+                         <table>
+                            <tr>
+                                <td style="font-weight: bold; color: darkblue; font-size: 25px; width: 45%; background-color: rgb(244, 247, 242);">World Wide Web</td>
+                         <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">URL-Uniform Resource Locator</td>
+                                <td><ul>
+                                    <li>The ability to locate and retrieve documents on the web.</li>
+                                    <li>Contains information needed by browsers to contact the right server, to require the right document.</li>
+                                </ul></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Client-Side Activities</td>
+                                <td>When a webpage involving animation or a form to be filled out and submitted requires additional information by either browser or webserver if performed by client (browser).</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Server Side Activities</td>
+                                <td>Performed by a webserver</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; color: darkblue; font-size: 25px; width: 45%; background-color: rgb(244, 247, 242);">Internet Four Layer Software</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Application Layer</td>
+                                <td>Where a message originates and prepares for the destination address</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Transport Layer</td>
+                                <td>Chops Messages into packets</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Network Layer</td>
+                                <td>Assigns intermediate address to each packet</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Link Layer</td>
+                                <td>Transfers packet.</td>
+                            </tr>
+                        </table>
+                        <table>
+                           <tr>
+                                <td style="font-size: 25px; color: darkblue; font-weight: bold; background-color: rgb(244, 247, 242);">Internet IS</td>
+                           </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Pocket Switching Network</td>
+                                <td>Groups data into short messages in a fixed format transmitted over digital network.</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Fault Tolerant</td>
+                                <td>System maintains proper operations despite failures or<br /> faults in one or more components.</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; width: 45%;">Redundant</td>
+                               <td>Practice of incorporating backup components or systems to ensure a computers uninterrupted operation.</td>
+                          </tr>                            
+                          </table>
+                          <table>
+                            <tr> 
+                                <td style="width: 45%; color: darkblue; background-color: rgb(244, 247, 242); font-weight: bold; font-size: 25px;"> Cyber Security</td>
+                           <table>
+                            <tr>
+                              <td style="width: 45%; font-weight: bold;">Malware</td>
+                                    <td><ul>
+                                        <li>Malicious Software that attacks a computer from a distance.</li>
+                                        <li>Can be transferred to and executed on the computer itself</li>
+                                    </ul></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Virus</td>
+                                <td><ul>
+                                    <li>Software that infects a computer</li>
+                                    <li>Inserts itself into programs already residing within the computer.</li>
+                                    <li>As host program is started the virus becomes active.</li>
+                                </ul></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Worm</td>                                  
+                                <td><ul>
+                                    <li>Autonomous program that transfers itself through a network.</li>
+                                    <li>Takes up residency in a computer duplicating itself.</li>
+                                    <li>Forwards copies of itself to other computers.</li>
+                                </td></ul>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Trojan Horse</td>
+                                <td><ul>
+                                    <li>Enters program as a game or useful utility program.</li>
+                                    <li>Can lie dormant until triggered.</li>
+                                    <li>Performs harmful effects on a computer.</li>
+                                </ul></td>                            
+                            </tr>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Spyware</td>
+                                <td><ul>
+                                    <li>"Sniffing Software".</li>
+                                    <li>Malicious software that collects information about the activities on a computer.</li>
+                                    <li>Reports information back to the investor of the attack.</li>
+                                </ul></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Phishing</td>
+                                <td>Obtains information explicitly by asking for it, hoping victim takes the "bait".</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">DDOS-Distributed Denial of Service Attack</td>
+                                <td>Works by generating attacks over many hosts using unsuspected computers.</td>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-size: 25px; font-weight: bold; color: darkblue; background-color: rgb(244, 247, 242);">Protection</td>
+                              </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Firewall</td>
+                                <td>Primary technique that filters traffic passing through a point in a network.</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Spam Filter</td>
+                               <td>Blocks unwanted mail.</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Proxy Server</td>
+                                <td><ul>                                    
+                                    <li>A software unit that acts as an intermediary between the client and server.</li>
+                                    <li>Goal: Sheild client from adverse actions of the server.</li>
+                                </ul></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Antivirus Software</td>
+                                <td>Detects and removes the presence of known viruses and other infections.</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Crytography</td>
+                                <td>The study of sending and recieving messages securely in the presence of adversaries.</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td style="width: 45%; font-weight: bold;">Public Key Encryption</td>
+                                <td>Technique of encryption/decryption algorithms known but encoded message remains secure.</td>
+                            </tr>
+                        </table>
+          
+
+    
+
+    
