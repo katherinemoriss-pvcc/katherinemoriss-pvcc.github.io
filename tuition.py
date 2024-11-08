@@ -37,7 +37,7 @@ def main():
             print("Thank you for enrolling in PVCC. Enjoy the semester!")
 
 def get_user_data():
-    global inout, numcredits, scholarshipamt
+    global inout, numcredits, scholarship_amt
     print('**** PIEDMONT VIRGINIA COMM COLLEGE Tuition & Fees ****')
     inout = int(input("Enter a 1 for IN-STATE; enter a 2 for OUT-OF-STATE: "))
     numcredits = int(input("Number of credits registered for: "))
@@ -53,13 +53,14 @@ def perform_calculations():
         tuition = numcredits * RATE_TUITION_OUT
         cap_fee = numcredits * RATE_CAPITAL_FEE
 
-    inst_fee = RATE_INSTITUTION_FEE
-    cap_fee  = RATE_CAPITAL_FEE
-    act_fee  = RATE_ACTIITY_FEE
+    inst_fee = RATE_INSTITUTION_FEE * numcredits
+    act_fee  = RATE_ACTIVITY_FEE  * numcredits
+    total = tuition + cap_fee + inst_fee + act_fee
+    balance = total - scholarship_amt
 
 def display_results():
     currency = '8,.2f'
-    line = '------------------------------------'
+    line = '----------------------------------------'
 
     print(line)
     print('**** PIEDMONT VIRGINIA COMM COLLEGE ****')
@@ -67,14 +68,14 @@ def display_results():
     print(str(datetime.datetime.now()))
     print(line)
     print('Tuition          $ ' + format(tuition,currency))
-    print('Capital Fee      $ ' + format(cap_fee,curremcu))
-    print('Institutionn Fee $ ' + format(inst_fee,currency))
+    print('Capital Fee      $ ' + format(cap_fee,currency))
+    print('Institution Fee  $ ' + format(inst_fee,currency))
     print('Activity Fee     $ ' + format(act_fee,currency))
     print('Total            $ ' + format(total,currency))
+    print('Scholarship      $ ' + format(scholarship_amt,currency))
     print('Balance          $ ' + format(balance,currency))
-
+    print(line)
 
 ################### call on main program to execute ################
-    
-    
+main()    
     
